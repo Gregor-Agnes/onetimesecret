@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2020-01-24T06:33:55Z" product-name="onetimescret">
+        <header/>
+        <body>
+            <trans-unit id="search-text" xml:space="preserve">
+				<source>There are %1$s results for &quot;%2$s&quot;.</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

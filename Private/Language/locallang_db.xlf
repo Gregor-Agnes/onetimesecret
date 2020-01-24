@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-01-24T06:33:55Z" product-name="onetimescret">
+		<header/>
+		<body>
+			<trans-unit id="tx_onetimesecret_domain_model_secret" xml:space="preserve">
+				<source>Secret</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
