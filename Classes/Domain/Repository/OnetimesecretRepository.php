@@ -9,8 +9,8 @@ use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 /**
  * Class SubscriptionRepository
  *
- * @package Zwo3\NewsletterSubscribe\Domain\Repository
+ * @package Zwo3\Onetimesecret\Domain\Repository
  */
-class SecretRepository extends Repository {
+class OnetimesecretRepository extends Repository {
 
 }

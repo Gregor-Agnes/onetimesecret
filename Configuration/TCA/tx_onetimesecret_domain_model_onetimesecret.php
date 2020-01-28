@@ -3,9 +3,9 @@ defined('TYPO3_MODE') or die();
 
 $ll = 'LLL:EXT:onetimesecret/Resources/Private/Language/locallang_db.xlf:';
 
-$tx_news_domain_model_news = [
+return [
     'ctrl' => [
-        'title' => $ll . 'tx_onetimesecret_domain_model_secret',
+        'title' => $ll . 'tx_onetimesecret_domain_model_onetimesecret',
         'label' => 'secret',
         'label_alt' => 'token',
         'languageField' => 'sys_language_uid',
@@ -20,7 +20,7 @@ $tx_news_domain_model_news = [
         'versioningWS' => true,
         'origUid' => 't3_origuid',
         'thumbnail' => 'image',
-        'iconfile' => 'EXT:onetimesecret/Resources/Public/Icons/tt_address.svg',
+        'iconfile' => 'EXT:onetimesecret/ext_icon.svg',
         'searchFields' => '',
     ],
     'interface' => [
@@ -157,7 +157,7 @@ $tx_news_domain_model_news = [
         ],
         'secret' => [
             'exclude' => true,
-            'label' => $ll . 'tx_news_domain_model_news.teaser',
+            'label' => $ll . 'tx_onetimesecret_domain_model_onetimesecret.teaser',
             'config' => [
                 'type' => 'text',
                 'cols' => 60,
@@ -167,7 +167,7 @@ $tx_news_domain_model_news = [
         ],
         'valid_until' => [
             'exclude' => false,
-            'label' => $ll . 'tx_news_domain_model_news.datetime',
+            'label' => $ll . 'tx_onetimesecret_domain_model_onetimesecret.valid_until',
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
@@ -175,5 +175,26 @@ $tx_news_domain_model_news = [
                 'eval' => 'datetime,int,required',
             ]
         ],
+        'last_hit' => array(
+            'label' => $ll . 'tx_onetimesecret_domain_model_onetimesecret.last_hit',
+            'exclude' => 1,
+            'config' => [
+                'type' => 'input',
+                'renderType' => 'inputDateTime',
+                'eval' => 'datetime',
+                'readOnly' =>1
+            ]
+        ),
+        'hit_number' => array(
+            'label' => $ll . 'tx_onetimesecret_domain_model_onetimesecret.hit_number',
+            'exclude' => 1,
+            'config' => array(
+                'size' => 30,
+                'type' => 'input',
+                'default' => '',
+                'readOnly' =>1
+            ),
+        ),
+
     ],
 ];

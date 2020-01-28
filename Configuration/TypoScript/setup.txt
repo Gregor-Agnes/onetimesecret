@@ -1,0 +1,48 @@
+page.includeJSFooter {
+	onetimesecret = EXT:onetimesecret/Resources/Public/JavaScript/app.js
+}
+plugin {
+	tx_onetimesecret {
+
+
+		view {
+			templateRootPaths {
+				0 = EXT:onetimesecret/Resources/Private/Templates/
+				1 = {$plugin.tx_onetimesecret.view.templateRootPath}
+			}
+
+			partialRootPaths {
+				0 = EXT:onetimesecret/Resources/Private/Partials/
+				1 = {$plugin.tx_onetimesecret.view.partialRootPath}
+			}
+
+			layoutRootPaths {
+				0 = EXT:onetimesecret/Resources/Private/Layouts/
+				1 = {$plugin.tx_onetimesecret.view.layoutRootPath}
+			}
+
+		}
+		mvc {
+			callDefaultActionIfActionCantBeResolved = 0
+		}
+		persistence {
+			#overides the settings in the plugin form, if used
+			storagePid = 17
+			classes {
+				Zwo3\Onetimesecret\Domain\Model\Onetimesecret.newRecordStoragePid = 17
+			}
+		}
+		features {
+			requireCHashArgumentForActionArguments = 0
+		}
+		settings {
+
+			# leave empty, if you do not want information about usage
+			adminEmail = test@zwo3.de
+			adminName = Zwo3
+
+			overrideFlexformSettingsIfEmpty = adminName
+
+		}
+	}
+}

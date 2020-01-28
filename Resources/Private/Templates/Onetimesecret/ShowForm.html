@@ -1,0 +1,44 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+      xmlns:t="Helhum\TyposcriptRendering\ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Standard"></f:layout>
+
+<f:section name="Default">
+	<f:form object="{onetimesecret}" name="onetimesecret" action="createLink" method="post">
+		<input type="hidden" name="formToken" value="{formToken}">
+		</input.hidden>
+		<label>
+			<f:translate key="secret"></f:translate>
+			<f:form.textarea property="secret" placeholder="{f:translate(key: 'secretPlaceholder')}"></f:form.textarea>
+		</label>
+		<f:form.validationResults for="onetimesecret.secret">
+			<f:if condition="{validationResults.flattenedErrors}">
+				<f:for each="{validationResults.errors}" as="error">
+					<p class="help-text">
+						<f:translate key="error.{error.code}" />
+					</p>
+				</f:for>
+			</f:if>
+		</f:form.validationResults>
+				<div class="input-group">
+					<select name="ttl" class="input-group-field">
+						<option value="604800" selected="">{f:translate(key: '7days')}</option>
+						<option value="259200">{f:translate(key: '3days')}</option>
+						<option value="86400">{f:translate(key: '1day')}</option>
+						<option value="43200">{f:translate(key: '12hours')}</option>
+						<option value="14400">{f:translate(key: '4hours')}</option>
+						<option value="3600">{f:translate(key: '1hour')}</option>
+						<option value="1800">{f:translate(key: '30minutes')}</option>
+						<option value="300">{f:translate(key: '5minutes')}</option>
+					</select>
+					<div class="input-group-button">
+						<button class="button hollow" type="submit">{f:translate(key: 'submit')}</button>
+
+					</div>
+				</div>
+	</f:form>
+</f:section>

@@ -2,11 +2,13 @@
 
 namespace Zwo3\Onetimesecret\Domain\Model;
 
-class Secret extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
+class Onetimesecret extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
 
     /**
      * @var string
+     *
+     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
      */
     protected $secret;
 
@@ -29,6 +31,17 @@ class Secret extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var \DateTime
      */
     protected $tstamp;
+
+    /**
+     * @var int
+     */
+    protected $lastHit;
+
+    /**
+     * @var int
+     */
+    protected $hitNumber;
+
 
     /**
      * @return string
@@ -108,6 +121,38 @@ class Secret extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setTstamp(\DateTime $tstamp): void
     {
         $this->tstamp = $tstamp;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLastHit(): ?int
+    {
+        return $this->lastHit;
+    }
+
+    /**
+     * @param int $lastHit
+     */
+    public function setLastHit(int $lastHit): void
+    {
+        $this->lastHit = $lastHit;
+    }
+
+    /**
+     * @return int
+     */
+    public function getHitNumber(): ?int
+    {
+        return $this->hitNumber;
+    }
+
+    /**
+     * @param int $hitNumber
+     */
+    public function setHitNumber(int $hitNumber): void
+    {
+        $this->hitNumber = $hitNumber;
     }
 
 

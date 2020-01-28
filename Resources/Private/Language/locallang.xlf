@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-01-28T12:02:29Z">
+		<header>
+			<authorName>Gregor Agnes</authorName>
+			<authorEmail>ga@zwo3.de</authorEmail>
+			<description>One time links to secret phrases</description>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="12hours">
+				<source><![CDATA[12 hours]]></source>
+			</trans-unit>
+			<trans-unit id="1day">
+				<source><![CDATA[1 day]]></source>
+			</trans-unit>
+			<trans-unit id="1hour">
+				<source><![CDATA[1 hour]]></source>
+			</trans-unit>
+			<trans-unit id="30minutes">
+				<source><![CDATA[30 minutes]]></source>
+			</trans-unit>
+			<trans-unit id="3days">
+				<source><![CDATA[3 days]]></source>
+			</trans-unit>
+			<trans-unit id="4hours">
+				<source><![CDATA[4 hours]]></source>
+			</trans-unit>
+			<trans-unit id="5minutes">
+				<source><![CDATA[5 minutes]]></source>
+			</trans-unit>
+			<trans-unit id="7days">
+				<source><![CDATA[7 days]]></source>
+			</trans-unit>
+			<trans-unit id="emailSuccess">
+				<source><![CDATA[Secret successfully delivered]]></source>
+			</trans-unit>
+			<trans-unit id="error.1221560718">
+				<source><![CDATA[Please insert your secret string]]></source>
+			</trans-unit>
+			<trans-unit id="pasteToClipboard">
+				<source><![CDATA[Paste to clipboard]]></source>
+			</trans-unit>
+			<trans-unit id="secretPlaceholder">
+				<source><![CDATA[Type your secret here]]></source>
+			</trans-unit>
+			<trans-unit id="submit">
+				<source><![CDATA[Create secret link]]></source>
+			</trans-unit>
+            <trans-unit id="error-title" xml:space="preserve">
+				<source>Error</source>
+			</trans-unit>
+            <trans-unit id="error-message" xml:space="preserve">
+				<source>This link is not valid</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

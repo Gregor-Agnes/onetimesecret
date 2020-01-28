@@ -1,0 +1,28 @@
+{
+  "name": "zwo3/onetimesecret",
+  "type": "typo3-cms-extension",
+  "description": "Send one time link for sensitive information with time limitation",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "onetimesecret"
+  ],
+  "homepage": "https://github.com/Gregor-Agnes/onetimesecret",
+  "license": ["GPL-2.0-or-later"],
+  "require": {
+    "typo3/cms-core": "^9.5"
+  },
+  "replace": {
+    "zwo3/onetimesecret": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zwo3\\Onetimesecret\\": "Classes/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Zwo3\\Onetimesecret\\Tests\\": "Tests/"
+    }
+  }
+}

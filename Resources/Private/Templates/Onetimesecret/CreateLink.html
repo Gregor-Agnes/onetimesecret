@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+      xmlns:t="Helhum\TyposcriptRendering\ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Standard"></f:layout>
+
+<f:section name="Default">
+
+	<div class="input-group">
+		<span class="input-group-label">Link</span>
+		<input class="input-group-field" type="text" readonly id="copyText"  value="{f:uri.action(absolute: 1, action: 'showSecret', arguments: {token: key, uid: onetimesecret.uid})}" />
+		<div class="input-group-button">
+			<button class="button" onclick="copyText()">{f:translate(key: 'pasteToClipboard')}</button>
+		</div>
+	</div>
+
+</f:section>

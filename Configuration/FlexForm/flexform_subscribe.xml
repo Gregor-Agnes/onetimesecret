@@ -1,0 +1,91 @@
+<T3DataStructure>
+    <meta type="array">
+        <langChildren>0</langChildren>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT>
+        <type>array</type>
+        <el>
+            <persistence.storagePid>
+                <TCEforms>
+                    <exclude>1</exclude>
+                    <label>Storage PID</label>
+                    <config>
+                        <type>group</type>
+                        <internal_type>db</internal_type>
+                        <allowed>pages</allowed>
+                        <size>3</size>
+                        <maxitems>99</maxitems>
+                        <minitems>1</minitems>
+                        <show_thumbs>1</show_thumbs>
+                        <wizards>
+                            <suggest>
+                                <type>suggest</type>
+                            </suggest>
+                        </wizards>
+                    </config>
+                </TCEforms>
+            </persistence.storagePid>
+
+            <persistence.recursive>
+                <TCEforms>
+                    <label>LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.recursive</label>
+                    <config>
+                        <type>select</type>
+                        <items type="array">
+
+                            <numIndex index="2" type="array">
+                                <numIndex index="0">LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:recursive.I.0</numIndex>
+                                <numIndex index="1">0</numIndex>
+                            </numIndex>
+                            <numIndex index="3" type="array">
+                                <numIndex index="0">LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:recursive.I.1</numIndex>
+                                <numIndex index="1">1</numIndex>
+                            </numIndex>
+                            <numIndex index="4" type="array">
+                                <numIndex index="0">LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:recursive.I.2</numIndex>
+                                <numIndex index="1">2</numIndex>
+                            </numIndex>
+                            <numIndex index="5" type="array">
+                                <numIndex index="0">LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:recursive.I.3</numIndex>
+                                <numIndex index="1">3</numIndex>
+                            </numIndex>
+                            <numIndex index="6" type="array">
+                                <numIndex index="0">LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:recursive.I.4</numIndex>
+                                <numIndex index="1">4</numIndex>
+                            </numIndex>
+                            <numIndex index="7" type="array">
+                                <numIndex index="0">LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:recursive.I.5</numIndex>
+                                <numIndex index="1">250</numIndex>
+                            </numIndex>
+                        </items>
+                    </config>
+                </TCEforms>
+            </persistence.recursive>
+            <settings.adminEmail>
+                <TCEforms>
+                    <exclude>1</exclude>
+                    <label>LLL:EXT:onetimesecret/Resources/Private/Language/locallang.xlf:adminEmail</label>
+                    <config>
+                        <type>input</type>
+                        <size>20</size>
+                        <max>60</max>
+                        <eval>trim,email,required</eval>
+                    </config>
+                </TCEforms>
+            </settings.adminEmail>
+            <settings.adminName>
+                <TCEforms>
+                    <exclude>1</exclude>
+                    <label>LLL:EXT:onetimesecret/Resources/Private/Language/locallang.xlf:adminName</label>
+                    <config>
+                        <type>input</type>
+                        <size>20</size>
+                        <max>60</max>
+                        <eval>trim</eval>
+                    </config>
+                </TCEforms>
+            </settings.adminName>
+        </el>
+    </ROOT>
+</T3DataStructure>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-01-24T06:33:55Z" product-name="onetimescret">
+		<header/>
+		<body>
+			<trans-unit id="tx_onetimesecret_domain_model_onetimesecret" xml:space="preserve">
+				<source>Onetimesecret</source>
+			</trans-unit>
+			<trans-unit id="tx_onetimesecret_domain_model_onetimesecret.secret" xml:space="preserve">
+				<source>Secret</source>
+			</trans-unit>
+			<trans-unit id="tx_onetimesecret_domain_model_onetimesecret.token" xml:space="preserve">
+				<source>Token</source>
+			</trans-unit>
+			<trans-unit id="tx_onetimesecret_domain_model_onetimesecret.valid_until" xml:space="preserve">
+				<source>Valid until</source>
+			</trans-unit>
+			<trans-unit id="tx_onetimesecret_domain_model_onetimesecret.last_hit" xml:space="preserve">
+				<source>Last hit</source>
+			</trans-unit>
+			<trans-unit id="tx_onetimesecret_domain_model_onetimesecret.hit_number" xml:space="preserve">
+				<source>Hit Number</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

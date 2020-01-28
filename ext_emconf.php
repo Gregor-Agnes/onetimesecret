@@ -1,6 +1,6 @@
 <?php
 
-$EM_CONF['newsletter_subscribe'] = array(
+$EM_CONF['onetimesecret'] = [
 	'title' => 'TYPO3 One Time Secret',
 	'description' => 'Send one time link for sensitive information with time limitation',
 	'category' => 'plugin',
@@ -18,14 +18,14 @@ $EM_CONF['newsletter_subscribe'] = array(
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
 	'version' => '0.0.1',
-	'constraints' => array(
-		'depends' => array(
+	'constraints' => [
+		'depends' => [
 			'typo3' => '9.5.0-9.5.99',
-		),
-		'conflicts' => array(
-		),
-		'suggests' => array(
-		),
-	),
-);
+        ],
+		'conflicts' => [
+        ],
+		'suggests' => [
+        ],
+    ],
+];
 
