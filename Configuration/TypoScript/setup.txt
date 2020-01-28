@@ -3,8 +3,6 @@ page.includeJSFooter {
 }
 plugin {
 	tx_onetimesecret {
-
-
 		view {
 			templateRootPaths {
 				0 = EXT:onetimesecret/Resources/Private/Templates/
@@ -20,7 +18,6 @@ plugin {
 				0 = EXT:onetimesecret/Resources/Private/Layouts/
 				1 = {$plugin.tx_onetimesecret.view.layoutRootPath}
 			}
-
 		}
 		mvc {
 			callDefaultActionIfActionCantBeResolved = 0
@@ -38,8 +35,8 @@ plugin {
 		settings {
 
 			# leave empty, if you do not want information about usage
-			adminEmail = test@zwo3.de
-			adminName = Zwo3
+			adminEmail =
+			adminName =
 
 			overrideFlexformSettingsIfEmpty = adminName
 
