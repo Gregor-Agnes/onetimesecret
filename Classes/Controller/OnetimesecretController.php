@@ -21,7 +21,7 @@ use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 use TYPO3\CMS\Fluid\View\StandaloneView;
 use TYPO3Fluid\Fluid\View\Exception\InvalidTemplateResourceException;
 use Zwo3\NewsletterSubscribe\Domain\Model\Subscription;
-use Zwo3\NewsletterSubscribe\Utilities\OverrideEmptyFlexformValues;
+use Zwo3\Onetimesecret\Utilities\OverrideEmptyFlexformValues;
 use Zwo3\Onetimesecret\Domain\Model\Onetimesecret;
 use Zwo3\Onetimesecret\Domain\Repository\OnetimesecretRepository;
 
