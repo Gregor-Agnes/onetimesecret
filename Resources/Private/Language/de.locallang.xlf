@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2020-01-28T13:54:46Z">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2020-01-30T16:32:16Z">
 		<header>
 			<authorName>Gregor Agnes</authorName>
 			<authorEmail>ga@zwo3.de</authorEmail>
@@ -39,6 +39,14 @@
 			<trans-unit id="7days" approved="yes">
 				<source><![CDATA[7 days]]></source>
 				<target><![CDATA[7 Tage]]></target>
+			</trans-unit>
+			<trans-unit id="adminEmail" approved="yes">
+				<source><![CDATA[Admin Email Address]]></source>
+				<target><![CDATA[Admin E-Mail-Adresse]]></target>
+			</trans-unit>
+			<trans-unit id="adminName" approved="yes">
+				<source><![CDATA[Admin Name]]></source>
+				<target><![CDATA[Admin Name]]></target>
 			</trans-unit>
 			<trans-unit id="emailSuccess" approved="yes">
 				<source><![CDATA[Secret successfully delivered]]></source>

@@ -8,7 +8,13 @@
 			<generator>LFEditor</generator>
 		</header>
 		<body>
-			<trans-unit id="12hours">
+            <trans-unit id="adminEmail">
+                <source>Admin Email Address</source>
+            </trans-unit>
+            <trans-unit id="adminName">
+                <source>Admin Name</source>
+            </trans-unit>
+            <trans-unit id="12hours">
 				<source><![CDATA[12 hours]]></source>
 			</trans-unit>
 			<trans-unit id="1day">

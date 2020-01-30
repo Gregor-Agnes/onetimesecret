@@ -20,10 +20,9 @@ use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 use TYPO3\CMS\Fluid\View\StandaloneView;
 use TYPO3Fluid\Fluid\View\Exception\InvalidTemplateResourceException;
-use Zwo3\NewsletterSubscribe\Domain\Model\Subscription;
-use Zwo3\Onetimesecret\Utilities\OverrideEmptyFlexformValues;
 use Zwo3\Onetimesecret\Domain\Model\Onetimesecret;
 use Zwo3\Onetimesecret\Domain\Repository\OnetimesecretRepository;
+use Zwo3\Onetimesecret\Traits\OverrideEmptyFlexformValuesTrait;
 
 /**
  * Class SubscribeController
@@ -33,6 +32,7 @@ use Zwo3\Onetimesecret\Domain\Repository\OnetimesecretRepository;
 class OnetimesecretController extends ActionController
 {
 
+    use OverrideEmptyFlexformValuesTrait;
     /**
      * @var ObjectManager
      */
@@ -63,17 +63,18 @@ class OnetimesecretController extends ActionController
      */
     protected $configurationManager;
 
+
+
+
     public function initializeAction()
     {
 
         $this->objectManager = GeneralUtility::makeInstance(ObjectManager::class);
         $this->persistenceManager = GeneralUtility::makeInstance(PersistenceManager::class);
         $this->onetimesecretRepository = $this->objectManager->get(OnetimesecretRepository::class);
-        $this->configurationManager = $this->objectManager->get(ConfigurationManagerInterface::class);
-        $this->overrideFlexFormValues = $this->objectManager->get(OverrideEmptyFlexformValues::class);
         $this->passwordHashing = $this->objectManager->get(PasswordHashFactory::class)
             ->getDefaultHashInstance('FE');
-        $this->settings = $this->overrideFlexFormValues->overrideSettings('onetimesecret', 'Onetimesecret');
+
     }
 
     public function showFormAction()
@@ -279,7 +280,7 @@ class OnetimesecretController extends ActionController
      * @param string $message - message to encrypt
      * @param string $key - encryption key
      * @return string
-     * @throws RangeException
+     * @throws \Exception
      */
     function safeEncrypt(string $message, string $key): string
     {

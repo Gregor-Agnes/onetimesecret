@@ -19,6 +19,15 @@ plugin {
 				1 = {$plugin.tx_onetimesecret.view.layoutRootPath}
 			}
 		}
+		settings {
+			overrideFlexformSettingsIfEmpty = adminName, adminEmail
+
+			# leave empty, if you do not want information about usage
+			adminEmail =
+			adminName = Site Admin
+
+
+		}
 		mvc {
 			callDefaultActionIfActionCantBeResolved = 0
 		}
@@ -32,14 +41,6 @@ plugin {
 		features {
 			requireCHashArgumentForActionArguments = 0
 		}
-		settings {
 
-			# leave empty, if you do not want information about usage
-			adminEmail =
-			adminName =
-
-			overrideFlexformSettingsIfEmpty = adminName
-
-		}
 	}
 }

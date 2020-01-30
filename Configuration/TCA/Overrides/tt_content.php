@@ -12,12 +12,11 @@ if (!defined('TYPO3_MODE')) {
 
 
 
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['onetimesecret'] = 'layout,recursive,select_key,pages';
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['onetimesecret'] = 'pi_flexform';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['onetimesecret_onetimesecret'] = 'layout,recursive,select_key,pages';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['onetimesecret_onetimesecret'] = 'pi_flexform';
 
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
-    'onetimesecret',
-    'FILE:EXT:onetimesecret/Configuration/FlexForm/flexform_subscribe.xml',
-    '*'
+    'onetimesecret_onetimesecret',
+    'FILE:EXT:onetimesecret/Configuration/FlexForm/flexform_onetimesecret.xml'
 );

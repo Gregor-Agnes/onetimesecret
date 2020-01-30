@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF['onetimesecret'] = [
-	'title' => 'TYPO3 One Time Secret',
-	'description' => 'Send one time link for sensitive information with time limitation',
+	'title' => 'TYPO3 Link to Onetime Secret',
+	'description' => 'Send onetime link for sensitive information with time limitation',
 	'category' => 'plugin',
 	'author' => 'Gregor Agnes',
 	'author_email' => 'ga@zwo3.de',
@@ -17,7 +17,7 @@ $EM_CONF['onetimesecret'] = [
 	'modify_tables' => '',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'version' => '1.0.0',
+	'version' => '1.1.0',
 	'constraints' => [
 		'depends' => [
 			'typo3' => '9.5.0-9.5.99',
