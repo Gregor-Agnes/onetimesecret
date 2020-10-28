@@ -13,7 +13,7 @@
 		</input.hidden>
 		<label>
 			<f:translate key="secret"></f:translate>
-			<f:form.textarea property="secret" placeholder="{f:translate(key: 'secretPlaceholder')}"></f:form.textarea>
+			<f:form.textarea style="height: 200px;" property="secret" placeholder="{f:translate(key: 'secretPlaceholder')}"></f:form.textarea>
 		</label>
 		<f:form.validationResults for="onetimesecret.secret">
 			<f:if condition="{validationResults.flattenedErrors}">
