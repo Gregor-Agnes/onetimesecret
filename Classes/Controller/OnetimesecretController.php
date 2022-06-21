@@ -159,7 +159,8 @@ class OnetimesecretController extends ActionController
                     $this->onetimesecretRepository->remove($onetimesecret);
                     $this->persistenceManager->persistAll();
 
-                    $this->redirect('success', null, null, compact('secret'));
+                    $this->view->setTemplate('Onetimesecret/Success');
+                    $this->view->assign('secret', $secret);
 
                 } else {
                     $this->onetimesecretRepository->remove($onetimesecret);
